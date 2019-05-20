@@ -1,0 +1,102 @@
+style { margin: 0; padding: 0; } 
+html{ background: url(" ../resources/x-box-vs-ps42.jpg") no-repeat center center fixed; webkit-background-size: cover; 
+	moz-background-size: cover; o-background-size: cover; background-size: cover;} 
+
+
+.navi{ 
+margin:0; 
+paddng:0;
+display: flex; 
+justify-content: top;
+align-items: top;
+height:18vh; 
+ 
+}
+ul{ 
+margin: 0; 
+padding: 0; 
+display: flex; 
+} 
+
+ul li { 
+list-style:none; 
+margin:25px; 
+transition: 0.5s; 
+} 
+ul li a { 
+display: block; 
+position: relative; 
+text-decoration: none; 
+background: -webkit-linear-gradient(#ff00ff, deepskyblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+padding:5px; 
+font-size:35px; 
+font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif" ; 
+color:black; 
+text-transform: uppercase; 
+transition: 0.5s; 
+} 
+ul li a:hover  
+{ transform: scale(1.5); 
+	opacity: .2; 
+	filter:blur(0);
+}
+ul li a:hover { 
+transform:scale(2); 
+opacity: 1; 
+filter:blur(3px);
+} 
+ul li a:before { 
+content:''; 
+position: absolute; 
+top: 0; 
+left:0;
+width:100%; 
+height:100%; 
+bacground:#0d0d0d ; 
+transform-orgin: right; 
+transform: scaleX(0); 
+z-index: -1;
+}
+ul li a:hover:before{transition:0.5s; 
+	transform-orgin:left;
+	transform:scaleX(0); 
+}
+
+p { font-size: 20px;} 
+h1{ text-decoration: underline; }
+    h3{ font-size: 18px;}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:#000000;
+  color: deepskyblue;
+  padding: 12px 20px;
+  border:medium;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color:#000000;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
